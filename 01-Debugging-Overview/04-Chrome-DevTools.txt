@@ -1,0 +1,143 @@
+===============
+Chrome DevTools
+=============== 
+
+CTRL + SHIFT + i 
+
+This command will bring up the devtools, 
+right click and ispecting the page also works 
+
+In the last video we took a closer look 
+at the various tools we have for
+debugging javascript.
+
+These are again tests unit and 
+integration logging javascript 
+errors and low level analysis.
+
+Let's continue our javascript 
+debugging study in this video 
+with a once over of the chrome dev tools.
+
+Typically Chrome is the go
+ to browser for development time testing.
+
+While a high end integration
+and performance testing
+uite would include all 
+of these
+
+Chrome is the default on
+the desktop of the majority
+of developers and the rule for the majority of
+teams and organizations.
+
+This is most likely because its dev tools
+are the strongest set available
+in the Chrome browser.
+
+There are three different ways to access
+dev tools from Chromes main menu.
+
+You can select more tools and developer tools
+or you can right click on any element 
+of a displayed age DML page and select inspect
+
+With everything Google and web these
+days even dev tools has a mobile first design.
+
+It's built to support mobile
+first fully responsive web 
+sites as it can simulate a wide range of devices
+and their capabilities, it can emulate a web 
+application across different screen sizes and 
+resolutions
+
+In Mobile mode dev tools can simulate device 
+input for touch events geo location and 
+device orientation
+
+Even network conditions can be tweaked 
+to simulate slower mobile data speeds, 
+web and mobile modes can be toggled with 
+an icon located on the far left of the toolbar.
+
+The elements panel provides clickable access 
+to elements displayed in a Pages HTML
+
+Any element can be right clicked and inspect 
+selected to display the element within the pages 
+DOM tree inside of the elements tab of the display.
+
+There's also the styles tab 
+contained within additional tabs 
+usually located to the right of the 
+elements tabs container.
+
+The tabs labeled styles displays the CSS
+rules being applied to the highlighted element.
+
+CSS rules can be added and edited within this tab,
+and changes are rendered immediately to the page.
+
+This is really handy for debugging CSS within the 
+elements tab where the DOM tree is displayed.
+
+Any existing elements can be edited or new ones 
+can be added, this is great for testing out ideas
+and changes.
+
+In addition to quickly testing bug
+fix ideas before editing actual source code files.
+
+The console panel gives us
+the power of the Devtools console.
+
+There are amazing syntactical
+tricks and tools that can be used
+ within the console to make debugging a breeze.
+
+We'll be spending a lot of time in the console
+as we progress through this course
+and we will see many of the great things 
+that can be done here.
+
+The sources panel is where we'll start 
+debugging running Javascript within Chrome.
+
+Here we can access all javascript 
+files included in the currently loaded 
+and running application and apply breakpoints 
+to stop execution where we deem necessary .
+
+With program execution halted on a particular
+line, we can control continuing execution
+by running through all of the remaining 
+code or to the next breakpoint
+we've set or go line by line and see 
+application state changing incrementally.
+
+Interestingly enough when we identify bugs we can 
+actually apply fixes right in the debugger save 
+them to the local code and rerun the application 
+to test our changes.
+
+All of this prior to going back to our source 
+code and applying the fix there.
+
+This is all very powerful and convenient to make 
+debugging easier.
+
+Even more amazing tools are provided in additional
+tabs including the network, performance,  memory
+application and security panels.
+
+The depth of analysis and breadth of aspects
+we can analyze are astounding with each of 
+these tools is amazing, and we'll go into more of 
+these great utilities later in the course and 
+add them to our javascript debugging arsenal as well.
+
+The console and sources tab are typically
+the workhorses in practice and will focus
+on them in most
