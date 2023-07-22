@@ -20,3 +20,17 @@ interactive debugging
 Chrome browswer provides robust, and widely used 
 developer tools to assist in the debugging process,
 and in this course we'll utilize them
+
+Debugging protocol: 
+
+- Unit and intergration tests are failing, analyzing 
+  the failures of these tests is one step 
+
+- Console output analysis, carefully reading any 
+  errors logged to the console
+
+- Using DevTools like inside of Chrome to dig deeper
+  and get a view on our app state, as the code throws 
+  exceptions and errors 
+
+  
