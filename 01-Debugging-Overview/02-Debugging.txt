@@ -1,0 +1,15 @@
+=========
+Debugging
+=========
+
+Debugging is the process of finding and resolving 
+defects or problems within the program that 
+prevent correct operation of computer software 
+or a system 
+
+Debugging tactics can involve interactive debugging 
+control flow analysis, unit testing, intergration 
+testing, log file analysis, monitoring at the 
+application or system level. memory dumps and 
+profiling
+
