@@ -1,0 +1,136 @@
+===============
+Debug-Able Code
+=============== 
+
+Writing debug-able code is just like writing 
+good code in general, there are some best practices 
+to keep in mind 
+
+- Use descriptive naming conventions, good variable 
+  and function names should be easy to understand 
+  and should at face-value, convey what the code
+  is doing, or be related to it's purpose, also 
+  avoid really long variable names, like:
+  function thisFunctionHasArgsAndWillDoXYZThings(){}
+
+  Another example is: 
+
+  function isLegalDrinkingAge(){}
+
+  makes more sense than 
+
+  function isOverEighteen()
+
+  since legal drinking age varies from state to state,
+  country to country
+
+  Hungarian Notation - Meaning someone should be able 
+  to infer from the name, what the code should do, or 
+  what it's related to
+
+  Hungarian Notation looks like: 
+
+  var sFamilyName = "Smith"
+
+the s prefix means this needs or should be a string
+
+const oMember = {}
+
+const bisLegal = true
+
+// Seems a little contrived to me, TypeScript 
+explicit type annotations fixes this no?
+
+- Keep to the English language for code
+
+The main takeaway is that when we're working with 
+a codebase, especially code we've not written ourselves,
+it would be nice if the code had concise, descriptive, 
+non-convoluted naming conventions, which in
+essence adds time to bug fixing as we need
+another step to decipher 
+what the variable name is supposed to be 
+
+===============================
+- Avoid global scoped variables 
+===============================
+
+Global variables and functions are a very bad idea
+
+This is because every JS file runs in the same scope,
+so variable names that have the same name will be overwritten
+
+There are several ways to keep our variables locally scoped: 
+
+Say we have three functions, and a variable: 
+
+var current = null;
+function init(){...}
+function change(){...}
+function verify(){...}
+
+We can encapsulate all of the above into an 
+object literal: 
+
+var myFunctions = {
+    current: null,
+    init: function(){...},
+    change: function(){...},
+    verify: function(){...}
+}
+The above does the job, but we'll always need to 
+call the functions with dot notation 
+
+myFunctions.init()
+myFunctions.change() etc... 
+
+We can also wrap all of it inside of an anonymous 
+function instead of an object literal: 
+
+myFunctions = function(){
+    var current = null;
+    function init(){...}
+    function change(){...}
+    function verify(){...}
+}();
+
+myFunctions = function(){
+    var current = null;
+    function init(){...}
+    return {
+    function change(){...}
+    function verify(){...}
+        }
+}();
+
+
+Object literals, then using dot notation seems 
+much better IMO, rather than the IIFE method
+
+var myFunctions = {
+    current: null,
+    init: function(){...},
+    change: function(){...},
+    verify: function(){...}
+}
+
+myFunctions.current 
+myFunctions.init()
+ ...etc 
+
+This approach also has a drawback, none of these 
+are available outside the scope now, if we want 
+some of the functions to be accessible publicly, 
+we wrap them in a return statement
+
+- Modularize - One Function Per Task
+
+This Modularization is a best practice technique, 
+we ensure our functions have one job, one task at a time 
+
+If we notice we are doing the same task over and over, 
+it's good practice to utilize helper functions instead
+
+One way in, One way out 
+
+

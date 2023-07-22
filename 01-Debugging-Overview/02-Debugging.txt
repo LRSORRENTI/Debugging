@@ -1,0 +1,36 @@
+=========
+Debugging
+=========
+
+Debugging is the process of finding and resolving 
+defects or problems within the program that 
+prevent correct operation of computer software 
+or a system 
+
+Debugging tactics can involve interactive debugging 
+control flow analysis, unit testing, intergration 
+testing, log file analysis, monitoring at the 
+application or system level. memory dumps and 
+profiling
+
+The scope of this course doesn't include unit tests, 
+or integration tests, but we'll dive deep into 
+interactive debugging
+
+Chrome browswer provides robust, and widely used 
+developer tools to assist in the debugging process,
+and in this course we'll utilize them
+
+Debugging protocol: 
+
+- Unit and intergration tests are failing, analyzing 
+  the failures of these tests is one step 
+
+- Console output analysis, carefully reading any 
+  errors logged to the console
+
+- Using DevTools like inside of Chrome to dig deeper
+  and get a view on our app state, as the code throws 
+  exceptions and errors 
+
+  

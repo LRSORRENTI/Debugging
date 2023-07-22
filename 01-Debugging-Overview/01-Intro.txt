@@ -1,0 +1,84 @@
+============
+Introduction
+============
+
+In this course we'll learn and practice common 
+debugging patterns to find and fix bugs, and 
+how to utilize the best tools to assist in 
+debugging 
+
+We'll go over error messages in depth, how to 
+step through our code line by line interactively,
+this will give us a peek inside what every variable 
+and function is doing during execution
+
+Learning how to utilize the debugger effectively, 
+and understanding how patterns of bugs can arise, 
+we can in turn facilitate cleaner, and less 
+error prone code
+
+=========
+Section 1
+=========
+
+- What is debugging
+
+- JavaScript debugging tools 
+
+- Chrome Developer Tools 
+
+- Debug-able code 
+
+=========
+Section 2
+=========
+
+- Breakpoints 
+
+- Call stacks 
+
+- Logging 
+
+- Source Maps
+
+- The console
+
+
+=========
+Section 3 
+=========
+
+- The Process 
+
+- More breakpoint types 
+
+- Working inside the console 
+
+- Replicating a bug to determine validity / scope 
+
+- Visually inspecting the source code for errors 
+
+- Looking for valuable console log outputs
+
+- Using strategically placed breakpoints to halt our code 
+
+- Using a Watch on what we perceive to be a pertinent 
+  value in application code 
+
+- Applying a trial fix within the source tab's code, 
+  saving it and running the code againt to test it 
+
+- Applying a proven fix in our actual source code 
+  and testing it in the browswer
+
+=========
+Section 4
+=========
+
+- More Chrome Dev Tools 
+
+- Performance tools 
+
+- Network tools 
+
+- Memory tools 

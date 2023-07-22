@@ -1,0 +1,40 @@
+==========================
+JavaScript Debugging Tools
+==========================
+
+=====
+TESTS
+===== 
+
+Unit, End-To-End, and Integration tests are outside 
+of the scope of this course, but it's important to 
+have a base level understanding of them 
+
+They are usually the first line of defense against 
+bugs in a development environment
+
+When tests are done after bundling / compiles finish, 
+the test themselves provide some feedback to the 
+effects the changes to the codebase made 
+
+Outside of code anaylysis, tests are the first line 
+of defense against bugs, failures, and errors 
+
+=======
+Logging
+=======
+
+Console logs can become robust tools if we craft them
+carefully
+
+File logging is not as handy, as files need  accessed 
+and scanned prior to providing value 
+
+=================
+JavaScript Errors
+=================
+
+JavaScript itself provides feedback at runtime through 
+it's error throwing capabilities, using try, catch blocks
+and custom error messages is another tool to 
+find bugs 
