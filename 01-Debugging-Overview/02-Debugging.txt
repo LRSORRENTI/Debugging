@@ -13,3 +13,10 @@ testing, log file analysis, monitoring at the
 application or system level. memory dumps and 
 profiling
 
+The scope of this course doesn't include unit tests, 
+or integration tests, but we'll dive deep into 
+interactive debugging
+
+Chrome browswer provides robust, and widely used 
+developer tools to assist in the debugging process,
+and in this course we'll utilize them
