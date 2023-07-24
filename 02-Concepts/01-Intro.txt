@@ -1,3 +1,53 @@
 ==================
 Debugging Concepts
 ==================
+
+In this section we'll learn more about breakpoints, 
+callstacks, logging, and source maps 
+
+These are components used during Debugging that 
+we'll learn to use 
+
+These tools enable us to view an application's state 
+during runtime, or when it's halted 
+
+===========
+Breakpoints
+===========
+
+Breakpoints give us execution control which halt 
+program execution at specific places earmarked 
+within the program code structure 
+
+The visibility of the application state is provided 
+in various views, most common being hover views
+and callstack tracing
+
+=======
+Logging
+=======
+
+We use console.log statements at places in our code 
+to view the value of a variable, as a compliment 
+to breakpoints, logging provides custom ways to display 
+state as the application code is executed
+
+===========
+Source Maps
+===========
+
+Source maps allow us to debug minified libraries, 
+like webpack, we can enable source maps which map 
+minified code back to their source code state 
+
+It allows us to debug minfied code, min.js files 
+
+=======
+Console
+=======
+
+Utilizing the console goes beyond console.log, the 
+console can be used to provide state info, which can 
+be difficult to find in other toolset views 
+
+It can also be used as a quick code editor for testing 
