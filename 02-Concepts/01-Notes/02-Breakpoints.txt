@@ -1,3 +1,41 @@
 ===========
 Breakpoints
 ===========
+
+In the chrome dev tools, under the sources tab 
+we can see the index.js file 
+
+If we click on a line number, we can set a break point, 
+this will pause execution of our code at that breakpoint 
+and let us look around, what values are variables in, 
+what our code looks like during that stage of execution 
+
+This can help visualize what a peice of data actually 
+looks like at that break point 
+
+And if we look below the callstack option on the right, 
+which shows the current function we're paused in, and 
+the function which triggered it, aka our event listener 
+
+This is the callstack, or an ordered list of functions
+ that have been called to get our application to it's 
+ current state 
+
+With very large applications with many moving parts, 
+it can be difficult to pin down when functions have 
+been called, with the callstack pane in the dev tools 
+we can see a play by play, like a slow motion replay 
+in football, how we got to this point in our application 
+
+And below the callstack pane is the breakpoints pane, 
+which displays our breakpoints, the ones we set, and 
+the line numbers for them
+
+Many apps can have tens, or even hundreds of breakpoints 
+to see how functions are being called during execution
+
+If you right click on a breakpoint, dev tools provides 
+many options to disable or change breakpoints
+
+And if we hover over values, we can 
+see the prototype chain
