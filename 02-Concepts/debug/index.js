@@ -7,10 +7,10 @@ btn.addEventListener( 'click',  () => {
     console.log(1)
 })
 
-const updateTrollBox = (trollPost) => {
+function updateTrollBox(trollPost){
     let trollData = '<p><b>' + trollPost.troll;
-    trollData += `</b>said:${trollPost}`
-    trollData += `- <small> ${trollPost.date} </small> </p>`
+    trollData += `</b> said: ${trollPost.message}`
+    trollData += ` - <small> ${trollPost.date} </small> </p>`
 
     // need to grab html list element   
     let currentTrollBox = document.getElementById('trollbox').innerHTML;
@@ -21,3 +21,23 @@ const updateTrollBox = (trollPost) => {
 
 
 }
+
+// New trollbox entry:
+
+btn.addEventListener('click', event => {
+    const troll = txtTrollName.value;
+    const msg = txtTrollMsg.value; 
+    const now = new Date();
+    const trollPost = {
+        troll: troll,
+        message: msg,
+        date: now.toUTCString()
+    };
+    // updatePosts:
+updateTrollBox(trollPost)
+// clear textbox 
+document.getElementById('txtTrollName').value = '';
+
+document.getElementById('txtTrollMsg').value = '';
+})
+
